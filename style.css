@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    left: 25px;
+}
+
+:root{
+    --main-color:hsl(47, 88%, 63%);
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.card{
+    width: 330px;
+    background-color: white;
+    height: 510px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px black;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card img:nth-child(1){
+    width: 280px;
+    top: 20px;
+    position: absolute;
+    
+    border-radius: 10px;
+}
+
+.card button{
+    position: absolute;
+    top: 43%;
+    
+    background-color: var(--main-color);
+    font-weight: 800;
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    border: transparent;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+
+.card p:nth-of-type(1){
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 52%;
+    
+}
+
+.card h2{
+position: absolute;
+
+top: 60%;
+font-family: "Figtree", sans-serif;
+font-size: 22px;
+font-weight: 800;
+font-style: normal;
+
+}
+.card p:nth-of-type(2){
+    top: 68%;
+    
+    font-size: 15px;
+    font-family: "Figtree", sans-serif;
+    position: absolute;
+    line-height: 23px;
+    color: #8e8e8e;
+}
+
+.card img:nth-of-type(2){
+    width: 35px;
+    position: absolute;
+    top: 87%;
+    
+}
+span{
+    position: absolute;
+    left: 65px;
+    top: 89%;
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+}
+
+@media (max-width:380px) {
+    .card{
+        margin-right: 40px;
+        width: 350px;
+    }
+}
